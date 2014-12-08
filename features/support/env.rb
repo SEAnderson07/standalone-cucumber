@@ -9,7 +9,7 @@ Capybara.configure do |config|
 end
 
 Capybara.register_driver :selenium do |app|
-  Selenium::WebDriver::Firefox::Binary.path = "/opt/firefox/firefox-bin"
+  Selenium::WebDriver::Firefox::Binary.path = "/usr/bin/firefox"
   Capybara::Selenium::Driver.new(app, :browser => :firefox)
 end
 
